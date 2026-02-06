@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mentoraone
+  namespace: mentoraone
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mentoraone
+  template:
+    metadata:
+      labels:
+        app: mentoraone
+    spec:
+      containers:
+        - name: mentoraone
+          image: nginx:alpine
+          ports:
+            - containerPort: 80

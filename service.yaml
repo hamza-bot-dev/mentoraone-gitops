@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mentoraone
+  namespace: mentoraone
+spec:
+  selector:
+    app: mentoraone
+  ports:
+    - port: 80
+      targetPort: 80
