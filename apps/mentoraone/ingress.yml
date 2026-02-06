@@ -5,7 +5,7 @@ metadata:
   namespace: mentoraone
 spec:
   rules:
-    - host: mentoraone.mondomaine.com
+    - host: mentoraone.com
       http:
         paths:
           - path: /
