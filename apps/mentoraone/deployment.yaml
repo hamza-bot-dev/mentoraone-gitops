@@ -18,6 +18,3 @@ spec:
           image: ghcr.io/hamza-bot-dev/mentoraone:dev
           ports:
             - containerPort: 80
-containers:
-  - name: mentoraone
-    image: ghcr.io/hamza-bot-dev/mentoraone:dev
