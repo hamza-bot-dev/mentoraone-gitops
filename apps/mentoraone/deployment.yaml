@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: mentoraone
-          image: ghcr.io/hamza-bot-dev/mentoraone:dev
+          image: ghcr.io/hbouzouf20/mentoraone-ep:5c8e728
           ports:
             - containerPort: 80
