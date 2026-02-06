@@ -6,10 +6,10 @@ metadata:
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls: "true"
-
-    # 🔥 IMPORTANT POUR ARGO CD
+    traefik.ingress.kubernetes.io/router.tls.certresolver: default
     traefik.ingress.kubernetes.io/service.serversscheme: https
 spec:
+  ingressClassName: traefik
   rules:
     - host: argocd.mentoraone.com
       http:
