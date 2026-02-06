@@ -11,7 +11,7 @@ metadata:
     traefik.ingress.kubernetes.io/service.serversscheme: https
 spec:
   rules:
-    - host: argocd.mondomaine.com
+    - host: argocd.mentoraone.com
       http:
         paths:
           - path: /
