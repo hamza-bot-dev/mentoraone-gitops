@@ -7,10 +7,9 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`argocd.mentoraone.com`)
-      kind: Rule
+    - kind: Rule
+      match: Host(`argocd.mentoraone.com`)
       services:
         - name: argocd-server
           port: 80
-  tls:
-    certResolver: default
+  tls: {}
