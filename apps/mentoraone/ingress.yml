@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mentoraone
+  namespace: mentoraone
+spec:
+  rules:
+    - host: mentoraone.mondomaine.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: mentoraone
+                port:
+                  number: 80
