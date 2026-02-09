@@ -4,9 +4,12 @@ metadata:
   name: mentoraone
   namespace: mentoraone
   annotations:
+    kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls: "true"
+    traefik.ingress.kubernetes.io/router.tls.certresolver: le
 spec:
+  ingressClassName: traefik
   rules:
     - host: mentoraone.com
       http:
