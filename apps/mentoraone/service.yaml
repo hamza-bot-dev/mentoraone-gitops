@@ -4,10 +4,9 @@ metadata:
   name: mentoraone
   namespace: mentoraone
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: mentoraone
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30080
